@@ -1,0 +1,11 @@
+services:
+  web-fe:
+    build: .
+    command: python app.py
+    ports:
+      - "5005:80"
+  redis:
+    image: "redis:alpine"
+    ports:
+      - 6379
+      
